@@ -68,6 +68,21 @@
                             <a class="nav-link" href="{{ url('/contact') }}">Contacto</a>
                         </li>
                     </ul>
+                    @auth
+
+                        <ul class="mr-0 navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('home') }}">Administrar</a>
+                            </li>
+                        </ul>
+                    @endauth
+                    @guest
+                        <ul class="mr-0 navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.login') }}">Ingresar</a>
+                            </li>
+                        </ul>
+                    @endguest
                 </div>
             </div>
         </nav>

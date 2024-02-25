@@ -1,7 +1,7 @@
 <nav class="p-2 bg-white shadow-sm navbar navbar-expand-md navbar-light">
     <div class="container">
 
-        <a class="navbar-brand text-primary font-weight-bold text-uppercase" href="{{ url('/') }}">
+        <a class="navbar-brand text-primary font-weight-bold text-uppercase" href="{{ route('home') }}">
             Proof News Portal
         </a>
 

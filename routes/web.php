@@ -25,6 +25,14 @@ Route::get('/', [NewsController::class, 'index'])->name('news.index');
 Route::get('/categoria/{slug}', [NewsController::class, 'newsByCategory'])->name('news.category');
 Route::get('/articulo/{slug}', [NewsController::class, 'newsArticle'])->name('news.article');
 
+Route::get('about', function () {
+    return view('site.about');
+});
+
+Route::get('contact', function () {
+    return view('site.contact');
+});
+
 Route::prefix('admin')->group(function () {
     Route::get('login', [LoginController::class, 'showLoginForm'])->name('admin.login');
     Route::post('login', [LoginController::class, 'login']);
