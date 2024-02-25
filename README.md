@@ -43,7 +43,7 @@ o
         ```
     - Con PHP + Composer
         ```
-            composer install
+        composer install
         ```
 
 4. *Levantar con Laravel Sail*:
@@ -101,4 +101,5 @@ El proyecto incluye pruebas unitarias y de integración para validar las funcion
     ```
     ./vendor/bin/sail test
     ```
+
 ![Batería de Tests](/public/tests.png)
